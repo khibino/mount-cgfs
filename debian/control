@@ -1,0 +1,16 @@
+Source: mount-cgfs
+Section: admin
+Priority: optional
+Maintainer: Kei Hibino <ex8k.hibino@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: http://github.com/khibino/mount-cgfs/
+Vcs-Git: git://github.com/khibino/mount-cgfs.git
+Vcs-Browser: http://github.com/khibino/mount-cgfs/
+
+Package: mount-cgfs
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Script to mount cgroup FS without systemd
+ This package contains init script to mount
+ cgroup FS without systemd.

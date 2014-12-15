@@ -1,0 +1,9 @@
+### Defaults for mount-cgfs initscript
+# sourced by /etc/init.d/mount-cgfs
+# installed at /etc/default/mount-cgfs by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+
+#cgroups='cpuset cpu cpuacct devices freezer net_cls net_prio blkio perf_event'
