@@ -19,8 +19,8 @@ PATH=/sbin:/usr/bin:/bin
 . /lib/lsb/init-functions
 
 # Include libvirtd defaults if available
-if [ -r /etc/default/mount-cfgs ] ; then
-    . /etc/default/mount-cfgs
+if [ -r /etc/default/mount-cgfs ] ; then
+    . /etc/default/mount-cgfs
 fi
 
 get_cgroups() {
@@ -93,7 +93,7 @@ case "$1" in
         ;;
 
     *)
-        N=/etc/init.d/mount-cfgs
+        N=/etc/init.d/mount-cgfs
         echo "Usage: $N {start|stop|restart|reload|force-reload}" >&2
         exit 1
         ;;
